@@ -33,8 +33,35 @@
 
                     <legend><span class="number">2</span>Questionario</legend>
 
-                    <label for="bio">Qual sua Profissão:</label>
-                    <input type="text" id="profissao" name="user_prof"></input>
+                    <label for="gender">Qual seu genero?</label>
+                    <input type="radio" id="female" value="female" name="gender"><label class="light"
+                        for="female">Feminino</label><br>
+                    <input type="radio" id="male" value="male" name="gender"><label class="light"
+                        for="male">Masculino</label><br>
+                    <input type="radio" id="other" value="other" name="gender"><label class="light"
+                        for="other">Outro</label><br>
+                    <input type="text">
+
+                    <label for="estado">Estado:</label>
+                    <select id="estado" name="estado" onchange="populateCities()">
+                        <option value="">Selecione o Estado</option>
+                    </select>
+                    <label for="cidade">Cidade:</label>
+                    <select id="cidade" name="cidade">
+                        <option value="">Selecione a Cidade</option>
+                    </select>
+
+                    <label for="acesso">Como conheceu nosso jogo?</label>
+                    <input type="radio" id="instagram" value="instagram" name="acesso"><label class="light"
+                        for="google">Instagram</label><br>
+                    <input type="radio" id="whatsapp" value="whatsapp" name="acesso"><label
+                        class="light">Whatsapp</label><br>
+                    <input type="radio" id="facebook" value="facebook" name="acesso"><label
+                        class="light">Facebook</label><br>
+                    <input type="radio" id="tiktok" value="tiktok" name="acesso"><label class="light">TikTok</label><br>
+                    <input type="radio" id="outro" value="outro" name="acesso"><label class="light">Outro</label><br>
+                    <input type="text">
+
                     <label for="job">Voce tem algum conhecimento sobre a agricultura familiar?</label>
                     <input type="radio" id="yes" value="yes" name="user_know"><label class="light"
                         for="yes">Sim</label><br>
@@ -42,6 +69,7 @@
                         for="no">Não</label><br>
                     <input type="radio" id="maybe" value="maybe" name="user_know"><label class="light" for="maybe">Um
                         pouco</label><br>
+
                     <p>Se voce se interessa sobre os pequenos agricultores pode acessar os links abaixo</p>
                     <ul>
                         <li>
@@ -66,6 +94,7 @@
         </div>
     </div>
     <script src="script.js"></script>
+    <script src="style.js"></script>
 </body>
 
 </html>
