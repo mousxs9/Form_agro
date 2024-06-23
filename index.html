@@ -1,0 +1,71 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="https://codepen.io/gymratpacks/pen/VKzBEp#0">
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-md-12">
+            <form action="index.html" method="post">
+                <h1>Bem vindo ao cadastro para o jogo</h1>
+
+                <fieldset>
+
+                    <legend><span class="number">1</span>Suas informaçoes</legend>
+
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="user_name">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="mail" name="user_email">
+
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="user_password">
+
+                </fieldset>
+                <fieldset>
+
+                    <legend><span class="number">2</span>Questionario</legend>
+
+                    <label for="bio">Qual sua Profissão:</label>
+                    <input type="text" id="profissao" name="user_prof"></input>
+                    <label for="job">Voce tem algum conhecimento sobre a agricultura familiar?</label>
+                    <input type="radio" id="yes" value="yes" name="user_know"><label class="light"
+                        for="yes">Sim</label><br>
+                    <input type="radio" id="no" value="no" name="user_know"><label class="light"
+                        for="no">Não</label><br>
+                    <input type="radio" id="maybe" value="maybe" name="user_know"><label class="light" for="maybe">Um
+                        pouco</label><br>
+                    <p>Se voce se interessa sobre os pequenos agricultores pode acessar os links abaixo</p>
+                    <ul>
+                        <li>
+                            <a class="link_agro"
+                                href="https://saebrasil.org.br/noticias/abastecimento-de-alimentos/">Como a comida chega
+                                a sua mesa?</a>
+                        </li>
+                        <li>
+                            <a class="link_agro"
+                                href="https://sigite.sagrima.ma.gov.br/mais-de-10-milhoes-trabalham-na-agricultura-familiar-aponta-censo-agro/">Agricultura
+                                familiar</a>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <button type="submit">Se inscreva!</button>
+
+            </form>
+            <div class="container">
+                <p>Agro é <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
